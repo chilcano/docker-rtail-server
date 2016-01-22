@@ -35,6 +35,7 @@ $ docker run -d -t --name=rtail-srv -p 8181:8181 -p 9191:9191/udp chilcano/rtail
 ```
 
 __Check the rTail Server__
+
 Just open a rTail Server Web Console from a browser with this URL http://<IP_ADDRESS_RTAIL_CONTAINER>/8181
 But if you want check if rTail Server Container is reacheable remotely (from other VM), just execute this:
 
@@ -42,6 +43,7 @@ But if you want check if rTail Server Container is reacheable remotely (from oth
 // Use NetCat instead of Telnet because Telnet doesn't use UDP
 $ nc -v -u -z -w 3 <IP_ADDRESS_RTAIL_CONTAINER> 9191
 Connection to 192.168.99.100 9191 port [udp/*] succeeded!
+```
 
 To stop, start or restart rTail Server just stop, start or restart the Docker container
 
