@@ -36,7 +36,7 @@ $ docker run -d -t --name=rtail-srv -p 8181:8181 -p 9191:9191/udp chilcano/rtail
 
 __Check the rTail Server__
 
-Just open a rTail Server Web Console from a browser with this URL http://<IP_ADDRESS_RTAIL_CONTAINER>/8181
+Just open the rTail Server Web Console from a browser with this URL `http://<IP_ADDRESS_RTAIL_CONTAINER>/8181`.
 But if you want check if rTail Server Container is reacheable remotely (from other VM), just execute this:
 
 ```bash
@@ -55,8 +55,8 @@ $ docker exec -i -t rtail-srv bash
 
 ## 2. Send log events to rTail Server Docker Container
 
-You can send any type of log events, from a syslog event, an echo message or a log by tailing. Before, you have to install rTail application again in the box/VM from you want send log events.
-I have created a Puppet module for rTail and I have added It to a Vagrant box to have the rTail (client) ready to be used.
+You can send any type of log events, from a syslog event, an echo message or a log by tailing. Before, you have to install rTail application again in the You can send any type of log events, from a syslog event, an echo message or a log by tailing. Before, you have to install rTail application again in the box/VM from where you want send log events.
+I have created a [Puppet module for rTail](https://github.com/chilcano/vagrant-wso2-dev-srv/tree/master/provision/wso2-stack-srv/puppet/modules/rtail_sender) and I have included It to the Vagrant box to have the rTail (client) ready to be used.
 
 To get a Vagrant box with rTail (client) pre-installed, you could use these Vagrant scripts ([https://github.com/chilcano/vagrant-wso2-dev-srv](https://github.com/chilcano/vagrant-wso2-dev-srv)).
 
