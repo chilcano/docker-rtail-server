@@ -12,7 +12,7 @@ For further information, check out the [project webpage](https://github.com/kili
 
 Both 8181 and 9191 ports are open without authentication. The recomendation is to apply some filter rule in the Firewall.
 
-![rTail Server - Tailing log events from a web browser](https://www.dropbox.com/s/845ei1w51jdgmu9/chilcano-logs-rtail-microservices-2-browsing.png?raw=1 "rTail Server - Tailing log events from a web browser")
+![rTail Server - Tailing log events from a web browser](https://www.dropbox.com/s/0swspjmc2w2l22p/chilcano-logs-rtail-microservices-2-browser.png?raw=1 "rTail Server - Tailing log events from a web browser")
 
 __rTail Server__
 * HTTP Port (view logs): 8181
